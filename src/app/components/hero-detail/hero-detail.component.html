@@ -1,0 +1,45 @@
+<button 
+class="return"
+(click)="goBack()"
+>
+    <i class='bi bi-backspace'></i>
+</button>
+<div class='hero-container' *ngIf="hero">
+    <div class="detail">
+        <div 
+        class="card-top"
+        [ngClass]="{
+            'card-top': true,
+            'red': hero.isAlive === false
+        }"
+        >
+            <h2>{{hero.name | uppercase}} Details</h2>
+        </div>
+        <div class="card-content">
+            <div>
+                <p>Id - {{ hero.id }}</p>
+            </div>
+            <div>
+                <p>Ability - {{ hero.ability }}</p>
+            </div>
+            <div>
+                <p *ngIf="!hero.isAlive"> {{hero.name}} <span>is currently deceased</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-section">
+            <label for="name">Rename hero :</label>
+            <input type="text" id='name' [(ngModel)]="hero.name"/>
+        </div>
+        <div class="form-section">
+            <label for="name">Change ability :</label>
+            <input type="text" id='name' [(ngModel)]="hero.ability"/>
+        </div>
+        <div class="form-section">
+            <label for="alive">Change alive status :</label>
+            <input type="checkbox" name="" id="alive" [(ngModel)]="hero.isAlive">
+        </div>
+        <button class='save' (click)="save()">Save <i class="bi bi-save"></i></button>
+    </div>
+</div>

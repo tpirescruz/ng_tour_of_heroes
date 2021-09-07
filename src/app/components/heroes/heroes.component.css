@@ -1,0 +1,104 @@
+
+li {
+    color: black;
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+.outer-heroes-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.strip {
+    padding: 1rem;
+    color: white;
+    border-radius: .5rem 0 0 .5rem;
+    background: #006eff;
+}
+.red {
+    background: red;
+}
+.hero-card p{
+    margin:0 auto;
+}
+.hero-card:hover {
+    transform: translateY(.5rem);
+    background: lightgrey;
+    filter: drop-shadow(2px 2px 4px grey);
+
+}
+.hero-card {
+    display: flex;
+    width: 20rem;
+    height: 4.4rem;
+    border-radius: .5rem 0 0 .5rem;
+    transition: .3s;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    align-items: center;
+}
+.selected {
+    transition: .3s;
+    outline: 3px solid #006eff;
+    background: lightgrey;
+    transform: scale(1.1) translateY(1rem);
+    filter: drop-shadow(2px 2px 4px grey);
+    
+}
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60rem;
+    border: lightgrey 1px solid;
+    border-radius: 1rem;
+}
+input{
+    text-align: center;
+    padding: .3rem;
+    border: 3px solid transparent;
+    border-bottom: 3px blue solid;
+    background: transparent;
+    margin: 1rem;
+    transition: .3s;
+}
+input:focus {
+    outline: none;
+    transition: .3s;
+    border: 3px blue solid;
+    border-radius: 10rem;
+}
+
+.add {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: min-content;
+    width: max-content;
+    border: none;
+    color: white;
+    background: blue;
+}
+.align {
+    display: flex;
+}
+
+.delete {
+    background: white;
+    border: none;
+    padding: 0 1rem;
+    height: 4.4rem;
+    color: red;
+    border-radius: 0 .5rem .5rem 0;
+    transition: .3s;
+}
+.delete:hover {
+    transition: .3s;
+    background: red;
+    color: white;
+    transform: translateY(.5rem);
+
+}

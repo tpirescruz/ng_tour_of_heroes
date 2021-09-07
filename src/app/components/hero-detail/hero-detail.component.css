@@ -1,0 +1,91 @@
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+label {
+    color: black;
+    font-family: 'Montserrat';
+}
+.selectedHero-container p{
+    color: white;
+    font-family: 'Roboto';
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+}
+.form-section input:focus {
+    outline: none;
+    transition: .5s;
+    border: 3px blue solid;
+    border-radius: 10rem;
+}
+.form-section input{
+    transition: .5s;
+    text-align: center;
+    border: 3px solid transparent;
+    padding: .3rem;
+    border-bottom: 3px blue solid;
+    background: transparent;
+    margin: 1rem;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.detail {
+    background: white;
+    border-radius: .5rem;
+    width: 40rem;
+    height: 20rem;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.527));
+
+}
+
+.card-content div{
+    display: flex;
+}
+.card-content {
+    margin: 2rem;
+}
+.detail p {
+    color: black;
+    font-family: 'Montserrat';
+}
+.card-top {
+    background-color: blue;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.red {
+    background: red;
+}
+
+.return {
+    padding: 1rem 2rem;
+    height: min-content;
+    font-size: 4rem;
+    color:black;
+    border-radius: 100px;
+    border: none;
+    background: transparent;
+}
+
+.save {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: min-content;
+    width: max-content;
+    border: none;
+    color: white;
+    background: rgb(29, 173, 29);
+}

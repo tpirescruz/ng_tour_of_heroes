@@ -1,0 +1,70 @@
+/* DashboardComponent's private CSS styles */
+
+h2 {
+    text-align: center;
+  }
+  
+  .heroes-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  a {
+    background-color: white;
+    border-radius: 2px;
+    padding: 1rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat';
+    color: black;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    cursor: pointer;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+  @media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+  }
+  
+  a:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    transition: .3s;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.527));
+
+  }
+  .status-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 100px;
+  }
+
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }

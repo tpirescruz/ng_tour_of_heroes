@@ -1,0 +1,18 @@
+
+  /* Application-wide Styles */
+nav a:hover {
+  background: white;
+}
+nav a{
+  background: lightgrey;
+  padding: 1rem;
+  border-radius: 3px;
+  font-family: 'Montserrat';
+  margin-right: 2rem;
+}
+router-outlet {
+  margin: 0 1rem ;
+}
+app-hero-search {
+  margin: 0 1rem;
+}

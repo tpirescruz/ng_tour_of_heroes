@@ -1,0 +1,45 @@
+<h2>Registered Heroes</h2>
+<div class="outer-heroes-container">
+    <div class='add-form'>
+        <div class='add-input'>
+            <label for="new-hero">Hero name: </label>
+            <input id="new-hero" #heroName />
+        </div>
+        <div class='add-input'>
+            <label for="new-hero">Hero ability: </label>
+            <input id="new-hero" #heroDesc />
+        </div>
+        <div class='add-input'>
+            <label for="new-hero">Hero is currently {{isAlive ? 'alive' :'dead' }}</label>
+            <input type='checkbox' id="new-hero" [(ngModel)]="isAlive"/>
+        </div>
+
+        <button class="add" (click)="add(heroName.value, heroDesc.value, isAlive); heroName.value=''; heroDesc.value='';
+        isAlive = false
+        ">
+          Add hero
+        <i class="bi bi-person-plus"></i>
+        </button>
+      </div>
+    <ul>
+        <li 
+        class="align"
+            *ngFor="let hero of heroes" 
+        >
+        <a 
+            routerLink="/detail/{{hero.id}}"
+            class='hero-card' 
+        >
+            <div *ngIf='hero.isAlive === true' class='strip'>{{hero.id}}</div>
+            <div *ngIf='hero.isAlive === false' class='strip red'>{{hero.id}}</div>
+            <p>{{hero.name}}</p>
+        </a>
+        <button 
+            class="delete"
+            (click)="delete(hero)"
+        >
+            <i class="bi bi-trash"></i>
+        </button>
+        </li>
+    </ul>
+</div>
