@@ -99,7 +99,6 @@ input:focus {
     transition: .3s;
     background: red;
     color: white;
-    filter: drop-shadow(0px 2px 4px #0000007a);
-    transform: translateY(.5rem);
+    transform: translateY(1rem);
 
 }
